@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500&family=Quicksand:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Asap', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    display: inline;
+  }
+
+  header .logo {
+    background-color: #07575b;
+    font-size: 25px;
+    padding: .5px;
+    color: white;
+    text-align: center;
+  }
+
+  header .nav-list {
+    background-color: #66a5ad;
+    padding: 1px;
+    position: sticky;
+    top: 0;
+  }
+
+  header .nav-list ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  header .nav-list ul li {
+    list-style-type: none;
+  }
+
+  header .nav-list ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+
+  header .nav-list ul li a:hover {
+    font-weight: bold;
+    color: #07575b;
+  }
+/* End the of Header */
+
+  main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+ 
+  main .card {
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px;
+  }
+
+  main .content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
+
+  main .judul-content {
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 20px;
+  }
+
+  main .content p {
+    text-align: justify;
+    line-height: 2;
+  }
+
+  .featured-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+/* Aside Bar */
+  main aside  {
+  flex: 1;
+  }
+
+  .profile .profile-side {
+    text-align: center;
+    font-size: large;
+  }
+  
+  .profile .profile-side img {
+    width: 250px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  main aside.profle header {
+    font-weight: 700;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  main aside section table tr th {
+    text-align: left;
+  }
+
+  main aside .sosial-media ul { 
+    display: flex;
+    padding: .5rem;
+    margin-top: 2rem;
+    padding-inline-start: 1rem;
+    border-radius: 999px;
+    background-color: #2D3E50;
+  }
+
+  main aside .sosial-media ul li {
+    list-style-type: none;
+    margin: auto;
+  }
+
+  main aside .sosial-media ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-inline: 1rem;
+    transition: all .1s ease-in-out;
+  }
+
+/* End the of Conten Bar */
+
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #07575b;
+    font-weight: bold;
+    text-align: center;
+}
+/* End the of Fotter Bar */
+
+/* Large devices (landscape computer, 1200px and down) */
+@media screen and (max-width: 1200px) {
+
+  main{
+    flex-flow: column nowrap;
+}
+
+  main aside{
+    align-self: center;
+  }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+
+  header .nav-list ul {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main aside{
+      align-self: stretch;
+  }
+}
+
+/* Small devices (landscape Handphone, 360px and down) */
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 50%;
+  }
+}
